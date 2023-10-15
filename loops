@@ -1,0 +1,127 @@
+numero = float(input("Digite um número:"))
+
+# Verifica se o número é positivo, negativo ou zero
+if numero > 0:
+    print("Esse número é positivo!")
+elif numero < 0:
+    print("Esse número é negativo!")
+else:
+    print("Esse número é ZERO!")
+    
+if numero % 2 == 0:
+    print("É par!")
+else:
+    print("É impar!")
+
+
+variavel = float(input("Digite um número inteiro: "))
+if variavel == 10:
+    print("Bem-vindo, jogador iniciante!")
+elif variavel < 10:
+    print("Bem-vindo, jogador iniciante!")
+else: 
+    print("Bem-vindo, jogador experiente!")
+
+idade = float(input("Digite a sua idade:"))
+              
+if  16 <= idade <= 18 or idade > 70:
+    print("Direito a voto, mas não obrigatório.")
+    
+elif idade >= 16 and idade <= 70:
+    print("Voto Obrigatório")
+else:
+    print("Não pode votar.")
+
+wishlist = ['Moby Dick', 'Helena', 'A Origem das Espécies', 'Grande Sertão: Veredas', 'Odisseia', 'Rápido e Devagar', 'Sidarta']
+
+precos_sebo = {'Odisseia':50, 'Jane Eyre':61, 'A Divina Comédia': 56, 'Helena':10, 'Moby Dick':55, 'Crime e Castigo':20}
+precos_internet = {'Odisseia':30, 'Jane Eyre':32, 'A Divina Comédia': 22, 'Helena':26, 'Moby Dick':145, 'Crime e Castigo':80}
+
+#####SEU CODIGO COMECA AQUI#####
+
+livros = ['Moby Dick', 'Crime e Castigo', 'Odisseia']
+
+for livro in livros:
+    if livro in wishlist and precos_sebo[livro] < precos_internet[livro]:
+        print(f"Devo comprar o {livro} no sebo")
+    else:
+        print(f"Não devo comprar o {livro} no sebo")
+
+##SEU CÓDIGO COMEÇA AQUI##
+preço_sobremesa = float(input("Informe o preço da sobremesa.").replace(",","."))
+print(f"O preço da sobremesa é: {preço_sobremesa} reais.")
+
+diferença1 = preço_sobremesa - 20
+diferença2 = 20 - preço_sobremesa
+
+if preço_sobremesa > 20.00:
+    print(f"Você precisa pagar {diferença1} reais a mais")
+elif preço_sobremesa == 20.00:
+    print("Você não precisa pagar nada a mais.")
+else:
+    print(f"Você economizou {diferença2} reais.")
+
+i = 1
+while i < 6:
+    if i < 6:
+        print(i)
+        i += 1
+
+coluna_1 = int(input("Digite o número para realizar a tabuada:"))
+print(f"Tabuada do: {coluna_1}")
+for coluna_2 in range(0,11):
+    print(coluna_1, "x", coluna_2, " = ", coluna_1 * coluna_2)
+
+bad_romance = """Rah, rah-ah-ah-ah
+                 Roma, roma-ma
+                 Gaga, ooh-la-la
+                 Want your bad romance
+
+                 Rah, rah-ah-ah-ah
+                 Roma, roma-ma
+                 Gaga, ooh-la-la
+                 Want your bad romance"""
+                 
+#####SEU CODIGO COMECA AQUI#####
+
+letra_a = bad_romance.count("a")
+print(f"A quantidade de letras A: {letra_a}")
+
+## O grande poder dos Loops é que você poder printar elementos em uma velocidade muuito maior. Utilize esse novo poder para printar os digitos de 1 a 9 da seguinte maneira:
+for num in range(1,10):
+    print(str(num)*num)
+
+número = float(input("Informe um número:"))
+if número > 1:
+    print("Esse número é maior que 1.")
+if número % 2 == 1:
+    print("Número é primo.")
+else:
+    print("Número não é primo.")
+
+i = 0
+soma = 0
+while 'true':
+    
+    numero = float(input("Digite um número:"))
+    soma += numero
+    if numero == 0:
+        print(f"A soma dos número inputados é {soma}\nVocê inputou {i} números")
+        break
+    i += 1
+
+
+
+deseja = 'true'
+
+while outro_ano:
+    ano = int(input("Digite o ano:"))    
+    if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+             print("É ano bissexto!")
+    else:
+        print("Não é ano bissexto!")
+   
+
+    outro_ano = input("Deseja verificar outro ano?").upper()
+    if outro_ano in ['N', 'NÃO', 'NAO']:
+        deseja = "false"
